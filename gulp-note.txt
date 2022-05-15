@@ -1,0 +1,8 @@
+-------------------------------------------
+    Tutoriel Gulp.js (youtube tutorial)
+-------------------------------------------
+
+1- Introduction
+    Gulp est un module nodejs qui va nous permettre d'automatisé toute une série de 
+    tâche liée au développement web comme la fusion de notre CSS, la minification de 
+    notre code javascript ou encore l'optimisation de nos images.
