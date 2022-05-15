@@ -11,7 +11,7 @@ function scssTask(){
 
 /* watch task */
 function watchTask(){
-    watch(['assets/sass/index.scss'], scssTask)
+    watch(['assets/sass/**/*.scss'], scssTask)
 }
 
 exports.default = series(scssTask, watchTask)
