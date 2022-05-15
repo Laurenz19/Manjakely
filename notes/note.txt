@@ -111,7 +111,7 @@ $font-size: 12px;
 
 /* Remind */
 The root selector: 
-The :root selector allows you to target the highest-level “parent” element in the DOM, or document tree.
+The :root selector allows us to target the highest-level “parent” element in the DOM, or document tree.
 
 @use rules:
 The @use rule loads mixins, functions, and variables from other Sass stylesheets, and combines CSS from multiple stylesheets together. 
@@ -397,6 +397,56 @@ Example:
     @include theme-colors($light-theme: false);
   }
 }
+
+The use of sass math:
+Check this link, if you wanna know a little bit about sass:math
+
+- Variables: 
+  math.$e (expo)
+  math.$pi (3.14)
+
+- Bounding functions
+  
+  a) Ceil
+  we use ceil function to round a number up to the next highest whole number.
+
+  Example: 
+  math.ceil(4); // 4
+  math.ceil(4.2); // 5 
+  math.ceil(4.9); // 5  
+  
+  b) Floor: 
+  To round number down to the next lowest whole number.
+
+  Example:
+  math.ceil(4); // 4
+  math.ceil(4.2); // 4 
+  math.ceil(4.9); // 4  
+
+  c) max, min, div, round, pow, sqrt, cos, sin, tan, percentage,...
+
+
+@debug rules:
+Check out the following link:
+https://sass-lang.com/documentation/at-rules/debug
+
+Sometime it's useful to see the value of an expression or a variable while 
+we're developing our stylesheet. That’s what the @debug rule is for: it’s written 
+@debug <expression>, and it prints the value of that expression, 
+along with the filename and line number.
+
+
+It allows us to debug our sass file.
+
+Example: 
+@debug "hello world"
+
+
+The use of Maps:
+https://sass-lang.com/documentation/values/maps
+
+
+
 
 
 

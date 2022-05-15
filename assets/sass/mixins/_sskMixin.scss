@@ -1,0 +1,6 @@
+@mixin sskColorMixin($color){
+    color: $color;
+    border-color: $color;
+    border-style: solid;
+    @content;
+}
