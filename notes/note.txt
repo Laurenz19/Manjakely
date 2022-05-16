@@ -445,6 +445,96 @@ Example:
 The use of Maps:
 https://sass-lang.com/documentation/values/maps
 
+Maps is used like associative arrays in programming languages. Maybe a little bit like
+an object in javascript. Basicaly, it's a way we can collect a lot of different variables.
+
+It very useful for generating an utilities classes.
+In sass, The map data type represents one or more key/value pair.
+
+Syntax:
+$syntax-map : (<key>:<value>);
+
+NB: afaka ovana ny variable map fa tsy manova ny variable original.
+
+  - To look up a value: map.get($map, "key"); // value.
+  Example: 
+  $font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+  @debug map.get($font-weights, "medium"); // 500
+  @debug map.get($font-weights, "extra-bold"); // null
+
+  - Do something for every pair
+  Example:
+  $icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+  @each $name, $glyph in $icons {
+    .icon-#{$name}:before {
+      display: inline-block;
+      font-family: "Icon Font";
+      content: $glyph;
+    }
+  }
+
+  - add to map:
+  It’s also useful to add new pairs to a map, or to replace the value for an existing key.
+  The map.set($map, $key, $value) function does this: it returns a copy of $map with the value 
+  at $key set to $value.
+
+  @use "sass:map";
+
+  $font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+  @debug map.set($font-weights, "extra-bold", 900);
+  // ("regular": 400, "medium": 500, "bold": 700, "extra-bold": 900)
+  @debug map.set($font-weights, "bold", 900);
+  // ("regular": 400, "medium": 500, "bold": 900)
+
+
+  We can also merge two existing maps usign map.merge($map1, $map2)
+
+  @use "sass:map";
+
+  $light-weights: ("lightest": 100, "light": 300);
+  $heavy-weights: ("medium": 500, "bold": 700);
+
+  @debug map.merge($light-weights, $heavy-weights);
+  // ("lightest": 100, "light": 300, "medium": 500, "bold": 700)
+
+  If both maps have the same keys, the second map’s values are used in
+  the map that gets returned.
+
+
+
+  Example:
+  /* The use of maps */
+  $map-example :("key1":"value1", "key2":"value2", "key3":"value3");
+
+  @debug map-get($map-example, "key1");
+  @debug map.get($map-example, "key3");
+  @debug map.set($map-example, "key3", "value4");
+  @debug map.merge($map-example, ("key4":"value4"));
+
+  @each $key,$value in $map-example {
+      @debug $value;
+  }
+
+About Color: sass:color  
+https://sass-lang.com/documentation/modules/color
+https://www.w3schools.com/sass/sass_functions_color.php 
+
+  - For more details, please check the links above.
+  - SASS Maniplate color function:
+  
+    mix($color1, $color2, weight) 
+    => Creates a color that is a mix of color1 and color2. 
+    The weight parameter must be between 0% and 100%. 
+    A larger weight means that more of color1 should be used. 
+    A smaller weight means that more of color2 should be used. Default is 50%.
+
+
+
+
+
 
 
 

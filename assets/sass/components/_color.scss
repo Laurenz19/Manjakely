@@ -1,0 +1,24 @@
+@import "../theme/colors";
+
+@each $key, $value in $colors {
+    .text-#{$key}{
+        color: $value;
+    }
+
+    .bg-#{$key}{
+        background-color: $value;
+    }
+
+    @for $nb from 1 to 10 {
+        //light
+        .bg-#{$key}-light-#{$nb}{
+            background-color: mix(#ffffff, $value, $nb * 10);
+        } 
+        
+        //dark
+        .bg-#{$key}-dark-#{$nb}{
+            background-color: mix(#232222, $value, $nb * 10);
+        } 
+    }
+    
+}
