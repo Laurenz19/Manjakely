@@ -545,6 +545,9 @@ https://www.w3schools.com/sass/sass_functions_color.php
     lighten() is usually not the best way to make a color lighter, use scale instead.
     color.scale(#e1d7d2, $lightness: 30%);
 
+Functions in sass:
+
+
 
 
 
