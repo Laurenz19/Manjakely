@@ -117,6 +117,7 @@ The :root selector allows us to target the highest-level “parent” element in
 The @use rule loads mixins, functions, and variables from other Sass stylesheets, and combines CSS from multiple stylesheets together. 
 Stylesheets loaded by @use are called "modules".
 
+  NB: @use rules must be written before any other rules.
 The simplest @use rule is written @use "<url>", which loads the module at the given URL.
 43:..=> Responsive design
 
@@ -530,6 +531,19 @@ https://www.w3schools.com/sass/sass_functions_color.php
     The weight parameter must be between 0% and 100%. 
     A larger weight means that more of color1 should be used. 
     A smaller weight means that more of color2 should be used. Default is 50%.
+
+    The use of ligthen and darken in sass: 
+    These functions will return a colour lighter or darker respectively.
+
+    Syntax:
+    lighten($color, $amount) //=> color
+    Makes $color lighter.
+    The $amount must be a number between 0% and 100% (inclusive). Increases the HSL
+    lightness of $color by that amount.
+
+    Heads up: 
+    lighten() is usually not the best way to make a color lighter, use scale instead.
+    color.scale(#e1d7d2, $lightness: 30%);
 
 
 

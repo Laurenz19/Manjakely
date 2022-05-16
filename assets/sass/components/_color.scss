@@ -5,20 +5,41 @@
         color: $value;
     }
 
+    .text-hover-#{$key}{
+        &:hover{
+            color: $value;
+        }
+    }
+
     .bg-#{$key}{
         background-color: $value;
     }
 
-    @for $nb from 1 to 10 {
-        //light
-        .bg-#{$key}-light-#{$nb}{
-            background-color: mix(#ffffff, $value, $nb * 10);
-        } 
-        
-        //dark
-        .bg-#{$key}-dark-#{$nb}{
-            background-color: mix(#232222, $value, $nb * 10);
-        } 
+    @if ($value != rgb(25, 25, 25) and $value != white ) {
+        @for $nb from 1 to 10 {
+            //light background
+            .bg-#{$key}-light-#{$nb}{
+                background-color: mix(#ffffff, $value, $nb * 10);
+            } 
+            
+            //dark background
+            .bg-#{$key}-dark-#{$nb}{
+                background-color: mix(#232222, $value, $nb * 10);
+            } 
+
+            //light text hover
+            .text-#{$key}-light-hover-#{$nb}{
+                &:hover{
+                    color: mix(#ffffff, $value, $nb * 10);
+                }
+            }
+
+             //dark text hover
+             .text-#{$key}-dark-hover-#{$nb}{
+                &:hover{
+                    color: mix(#232222, $value, $nb * 10);
+                }
+            }
+        }   
     }
-    
 }

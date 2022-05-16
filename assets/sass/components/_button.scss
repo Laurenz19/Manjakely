@@ -1,0 +1,28 @@
+@use "../theme/colors" as sskColor;
+@use "../theme/fonts" as sskFont;
+@use "sass:color";
+@import "../theme/colors";
+
+
+.btn{
+   @include buttonMixin;
+   color: sskColor.$default;
+}
+
+@each $key, $value in $colors {
+
+
+    .btn-#{$key}{
+        @include buttonMixin($value, false);
+        &:hover{
+            background-color: color.scale($value, $lightness: 10%);
+        }
+    }
+
+    .btn-#{$key}-outlined{
+        @include buttonMixin($value, true);
+        &:hover{
+            background-color: $value;
+        }
+    }
+}
