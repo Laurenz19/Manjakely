@@ -11,3 +11,13 @@ $font-size-sm: $base-font-size * 0.75;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size *2;
 $font-size-xxl: $base-font-size *3;
+
+
+/* break point */
+$screen-sizes:(
+    "xs": 0,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px
+);

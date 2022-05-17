@@ -1,7 +1,7 @@
 
 @use "../theme/colors" as sskColor;
 @use "../theme/fonts" as sskFont;
-@import "../mixins/sskMixin";
+@import "./mixins/sskMixin";
 
 /* global css & reset style */
 
@@ -32,7 +32,7 @@ img{
 //Optional
 hr {
     border: 0;
-    border-top: 1px dotted #efefef;
+    border-top: 1px dotted #c3c3c3;
 }
 
 .error{
@@ -53,9 +53,9 @@ hr {
     }
 }
 
-h1{
+/* h1{
     color: sskColor.$primary;
-}
+} */
 
 /* button{
     background-color: sskColor.$primary;
@@ -64,3 +64,21 @@ h1{
     color: white;
     padding: $base-padding;
 } */
+
+.test{
+    @include xs{
+        color: blue;
+    }
+    @include sm{
+        color: rgb(140, 255, 0);
+    }
+    @include md{
+        color: rgb(225, 0, 255);
+    }
+    @include lg{
+        color: rgb(255, 153, 0);
+    }
+    @include xl{
+        color: rgb(255, 0, 0);
+    }
+}

@@ -21,10 +21,18 @@
             .bg-#{$key}-light-#{$nb}{
                 background-color: mix(#ffffff, $value, $nb * 10);
             } 
+
+            .text-#{$key}-light-#{$nb}{
+                color: mix(#ffffff, $value, $nb * 10);
+            } 
             
             //dark background
             .bg-#{$key}-dark-#{$nb}{
                 background-color: mix(#232222, $value, $nb * 10);
+            } 
+
+            .text-#{$key}-dark-#{$nb}{
+                color: mix(#232222, $value, $nb * 10);
             } 
 
             //light text hover

@@ -1,0 +1,174 @@
+@use "sass:math";
+@use "sass:map";
+
+$utilities:(
+    "padding":(
+        "prefixe":"p",
+        "values":(
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-left":(
+        "prefixe":"pl",
+        "values":(
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-right":(
+        "prefixe":"pr",
+        "values":(
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-bottom":(
+        "prefixe":"pb",
+        "values":(
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-top":(
+        "prefixe":"pt",
+        "values":(
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "margin":(
+        "prefixe":"m",
+        "values":(
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-left":(
+        "prefixe":"ml",
+        "values":(
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-right":(
+        "prefixe":"mr",
+        "values":(
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-bottom":(
+        "prefixe":"mb",
+        "values":(
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-top":(
+        "prefixe":"mt",
+        "values":(
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "opacity":(
+        "prefixe":"o",
+        "values":(
+            "10": 0.1,
+            "20": 0.2,
+            "30": 0.3,
+            "40": 0.4,
+            "50": 0.5,
+            "60": 0.6,
+            "70": 0.7,
+            "80": 0.8,
+            "90": 0.9,
+            "100":1
+        ),
+    ),
+    "border-radius":(
+        "prefixe": "br",
+        "values":(
+            "default": $base-border-radius,
+            "none" : 0,
+            "xs": math.div($base-border-radius, 4),
+            "sm": math.div($base-border-radius, 2),
+            "lg": $base-border-radius *2,
+            "full": 50%
+        ),
+    ),
+    "display":(
+        "prefixe": "display",
+        "values":(
+            "n": "none",
+            "f": "flex",
+            "b": "block",
+            "i": "inline",
+            "ib": "inline-block"
+        ),
+    ),
+    "font-size":(
+        "prefixe": "font",
+        "values":(
+            "sm": $font-size-sm,
+            "md": $base-font-size,
+            "lg": $font-size-lg,
+            "xl": $font-size-xl,
+            "xxl": $font-size-xxl
+        ),
+    )
+);
+
+/* Generate utilities classes */
+
+@each $property, $property-infos in $utilities {
+    $prefixe: map.get($property-infos, "prefixe");
+    $values : map.get($property-infos, "values");
+
+    @each $key, $value in $values {
+        
+        @if $key == "default"{
+            .#{$prefixe}{
+                #{$property}: $value
+            }
+        } @else {
+            .#{$prefixe}-#{$key}{
+                #{$property}: $value
+            }   
+        }
+        
+    }
+}
+
+

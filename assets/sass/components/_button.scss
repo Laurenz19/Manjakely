@@ -1,6 +1,8 @@
 @use "../theme/colors" as sskColor;
 @use "../theme/fonts" as sskFont;
 @use "sass:color";
+@use "sass:math";
+@use "sass:map";
 @import "../theme/colors";
 
 
@@ -26,3 +28,4 @@
         }
     }
 }
+

@@ -546,7 +546,16 @@ https://www.w3schools.com/sass/sass_functions_color.php
     color.scale(#e1d7d2, $lightness: 30%);
 
 Functions in sass:
+https://sass-lang.com/documentation/at-rules/function
+https://www.koderhq.com/tutorial/sass/mixin/
 
+
+Example:
+@function sum ($nb1, $nb2){
+    @return $nb1+$nb2;
+}
+
+@debug sum(1,2)
 
 
 

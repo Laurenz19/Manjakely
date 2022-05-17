@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "sass:math";
+@use "sass:map";
+
 @mixin sskColorMixin($color){
     color: $color;
     border-color: $color;
@@ -19,4 +23,42 @@
     cursor: pointer;
     border-radius: $base-border-radius;
     padding: $base-padding $base-padding*2;
+}
+
+/* Responsive */
+
+@mixin xs {
+    @media screen and (min-width: map.get($screen-sizes, "xs")){
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (min-width: map.get($screen-sizes, "sm")){
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (min-width: map.get($screen-sizes, "md")){
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: map.get($screen-sizes, "lg")){
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (min-width: map.get($screen-sizes, "xl")){
+        @content;
+    }
+}
+
+@mixin break-point($pb:0){
+    @media screen and (min-width: $pb) {
+        @content;
+    }
 }
