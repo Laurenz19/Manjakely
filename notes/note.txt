@@ -558,6 +558,55 @@ Example:
 @debug sum(1,2)
 
 
+Remind about CSS:
+- box-sizing: this property allows us to include border and 
+padding in element's total height and width.
+If you set box-sizing: border-box; on an element, padding 
+and border are included in the width and height.
+
+Another feature that we can use with sass is extends feature.
+@extend rules
+https://www.w3schools.com/sass/sass_extend.php
+
+The @extend directive let us to share a set of css properties from one selector
+to another selector. (Inheritance)
+
+It is useful if we have almost identically styled elements that only differ in some 
+small details.
+
+NB:
+By using the extend directive we don't need to specify several classes for an element
+in our HTML code. It keeps our sass code very dry.
+
+Example:
+.flex-layout{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar{
+
+    @extend .flex-layout;
+    padding: $base-padding $base-padding *2 ;
+    box-shadow: $base-box-shadow;
+
+    .nav-title{
+        font-size: $font-size-xl;
+    }
+
+    .container{
+        @extend .flex-layout;
+    }
+}
+
+Another example:
+
+
+
+
 
 
 

@@ -21,3 +21,20 @@ $screen-sizes:(
     "lg": 960px,
     "xl": 1200px
 );
+
+
+/* Grid Column */
+$grid-columns: 12;
+
+//grid-gaps
+$grid-gaps:(
+    "0":0,
+    "1":10px,
+    "2":20px,
+    "3":30px
+);
+
+//justify content
+$layout-values: flex-start, flex-end, center, space-around, space-between;
+
+

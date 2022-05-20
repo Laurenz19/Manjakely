@@ -8,3 +8,11 @@ $parisienne: 'Parisienne', cursive;
 $poppins: 'Poppins', sans-serif;
 
 $default: $roboto;
+
+$font-families: (
+    "nunito-sans": $nunito-sans,
+    "nunito": $nunito,
+    "roboto": $roboto,
+    "parisienne": $parisienne,
+    "poppins": $poppins
+);

@@ -1,0 +1,82 @@
+@use "sass:math";
+
+/* Base layout */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@include xs{
+    @for $nb from 1 to $grid-columns {
+        .col-#{$nb}-xs{
+           @include grid($nb, $grid-columns);
+        }
+    }
+}
+
+@include sm{
+    @for $nb from 1 to $grid-columns {
+        .col-#{$nb}-sm{
+           @include grid($nb, $grid-columns);
+        }
+    }
+}
+
+@include md{
+    @for $nb from 1 to $grid-columns {
+        .col-#{$nb}-md{
+           @include grid($nb, $grid-columns);
+        }
+    }
+}
+
+@include lg{
+    @for $nb from 1 to $grid-columns {
+        .col-#{$nb}-lg{
+           @include grid($nb, $grid-columns);
+        }
+    }
+}
+
+@include xl{
+    @for $nb from 1 to $grid-columns {
+        .col-#{$nb}-xl{
+           @include grid($nb, $grid-columns);
+        }
+    }
+}
+
+/* Grid Gaps */
+@each $key, $value in $grid-gaps {
+    .grid-#{$key} > *{
+        padding: $value;
+    }
+
+    .grid-#{$key}{
+        margin-left: -$value;
+        margin-right: -$value;
+    }
+}
+
+/* Justify content classes */
+
+@each $value in $layout-values {
+    .justify-#{$value}{
+        justify-content: $value;
+    }
+}

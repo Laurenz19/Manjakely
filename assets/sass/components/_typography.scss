@@ -1,0 +1,8 @@
+/* Typography */
+
+//font-family
+@each $key, $value in $font-families {
+    .font-family-#{$key}{
+        font-family: $value;
+    }
+}

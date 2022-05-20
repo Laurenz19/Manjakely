@@ -1,0 +1,30 @@
+/* Navbar */
+%flex-layout{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar{
+
+    @extend %flex-layout;
+    padding: $base-padding $base-padding *2 ;
+    box-shadow: $base-box-shadow;
+
+    .nav-title{
+        font-size: $font-size-xl;
+    }
+
+    .container{
+        @extend %flex-layout;
+    }
+}
+
+@each $key, $value in $colors{
+    .navbar-#{$key}{
+        @extend .navbar;
+        background-color: $value;
+    }
+}
