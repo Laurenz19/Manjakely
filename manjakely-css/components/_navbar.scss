@@ -12,6 +12,7 @@
     @extend %flex-layout;
     padding: $base-padding $base-padding *2 ;
     box-shadow: $base-box-shadow;
+    z-index: 1;
 
     .nav-title{
         font-size: $font-size-xl;
@@ -22,6 +23,7 @@
     }
 }
 
+/* navbar with specified background color */
 @each $key, $value in $colors{
     .navbar-#{$key}{
         @extend .navbar;

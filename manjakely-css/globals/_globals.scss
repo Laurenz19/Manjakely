@@ -1,0 +1,40 @@
+
+@use "../theme/colors" as sskColor;
+@use "../theme/fonts" as sskFont;
+/* @use "./mixins/sskMixin"; */
+
+/* global css & reset style */
+
+*{
+ color: inherit;    
+ margin: 0;   
+}
+
+body{
+    font-family: sskFont.$default;
+    font-size: 15px;
+    color: sskColor.$default;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+//Optional
+hr {
+    border: 0;
+    border-top: 1px dotted #c3c3c3;
+}
+
+.main-container{
+    top:100px
+}

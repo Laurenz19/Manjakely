@@ -603,6 +603,36 @@ Example:
 }
 
 Another example:
+%flex-layout{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar{
+
+    @extend %flex-layout;
+    padding: $base-padding $base-padding *2 ;
+    box-shadow: $base-box-shadow;
+
+    .nav-title{
+        font-size: $font-size-xl;
+    }
+
+    .container{
+        @extend %flex-layout;
+    }
+}
+
+
+Purging CSS:
+In this section, we learn how to reduce our css code. Instead of 
+loading all css from the index.css file, we just need the classes used
+inside our html file.
+
+For that we use another gulp plugin called "purge css".
 
 
 

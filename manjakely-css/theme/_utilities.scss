@@ -147,6 +147,16 @@ $utilities:(
             "xl": $font-size-xl,
             "xxl": $font-size-xxl
         ),
+    ),
+    "position":(
+        "prefixe": "position",
+        "values":(
+            "static":static,
+            "fixed": fixed,
+            "relative": relative,
+            "sticky": sticky,
+            "absolute": absolute,
+        ),
     )
 );
 

@@ -9,8 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* Responsive */
-/* Grid */
+/* @use "./mixins/sskMixin"; */
 /* global css & reset style */
 * {
   color: inherit;
@@ -41,60 +40,8 @@ hr {
   border-top: 1px dotted #c3c3c3;
 }
 
-.error {
-  color: rgb(255, 0, 54);
-  border-color: rgb(255, 0, 54);
-  border-style: solid;
-  margin: 0.75rem;
-  padding: 0.75rem;
-  border-radius: 20px;
-  border-width: 1px;
-}
-
-.secondary {
-  color: rgb(106, 202, 65);
-  border-color: rgb(106, 202, 65);
-  border-style: solid;
-  margin: 0.75rem;
-  padding: 0.75rem;
-  border-radius: 20px;
-  border-width: 1px;
-}
-
-/* h1{
-    color: sskColor.$primary;
-} */
-/* button{
-    background-color: sskColor.$primary;
-    border-radius: $base-border-radius;
-    border: 0;
-    color: white;
-    padding: $base-padding;
-} */
-@media screen and (min-width: 0) {
-  .test {
-    color: blue;
-  }
-}
-@media screen and (min-width: 480px) {
-  .test {
-    color: rgb(140, 255, 0);
-  }
-}
-@media screen and (min-width: 720px) {
-  .test {
-    color: rgb(225, 0, 255);
-  }
-}
-@media screen and (min-width: 960px) {
-  .test {
-    color: rgb(255, 153, 0);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .test {
-    color: rgb(255, 0, 0);
-  }
+.main-container {
+  top: 100px;
 }
 
 /* Fonts */
@@ -403,6 +350,26 @@ hr {
 
 .font-xxl {
   font-size: 3rem;
+}
+
+.position-static {
+  position: static;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.position-absolute {
+  position: absolute;
 }
 
 /* Fonts */
@@ -3732,10 +3699,12 @@ hr {
 .navbar, .navbar-white, .navbar-default, .navbar-silver, .navbar-chocolate, .navbar-forest-green, .navbar-teal-blue, .navbar-medium-orchid, .navbar-aero-blue, .navbar-warning, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
   padding: 0.75rem 1.5rem;
   box-shadow: 3px 3px 15px 0px rgba(66, 68, 90, 0.2);
+  z-index: 1;
 }
 .navbar .nav-title, .navbar-white .nav-title, .navbar-default .nav-title, .navbar-silver .nav-title, .navbar-chocolate .nav-title, .navbar-forest-green .nav-title, .navbar-teal-blue .nav-title, .navbar-medium-orchid .nav-title, .navbar-aero-blue .nav-title, .navbar-warning .nav-title, .navbar-info .nav-title, .navbar-error .nav-title, .navbar-secondary .nav-title, .navbar-primary .nav-title {
   font-size: 2rem;
 }
+/* navbar with specified background color */
 .navbar-primary {
   background-color: rgb(107, 140, 255);
 }

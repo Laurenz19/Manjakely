@@ -30,7 +30,10 @@ Complete SASS tutorial:
 4-  Adding utilities:
 Marging, padding, opacity, display, float, ... 
 
-5- Media query:
+5-  How to use this library:
+    add manjakely-css folder in your project directory and then 
+    import it inside your scss file.
+    @import "manjakely-css";
 
 
     
