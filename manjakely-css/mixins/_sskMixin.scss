@@ -9,7 +9,7 @@
     @content;
 }
 
-@mixin buttonMixin($color:#e2e2e2, $outlined:false) {
+@mixin buttonMixin($color:#e2e2e2, $outlined:false, $br: false) {
 
     @if $outlined == true{
         border:$base-border-thickness solid $color;
@@ -19,9 +19,15 @@
         border: none;
         background-color: $color;        
     }
+
+    @if $br == true{
+        border-radius: $base-border-radius;
+    } @else{
+        border-radius: none;
+    }
+
     text-decoration: none;
     cursor: pointer;
-    border-radius: $base-border-radius;
     padding: $base-padding $base-padding*2;
 }
 

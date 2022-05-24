@@ -6,8 +6,10 @@
 @import "../theme/colors";
 
 
+
+/* Default Button */
 .btn{
-   @include buttonMixin;
+   @include buttonMixin($br:true);
    color: sskColor.$default;
 }
 
@@ -15,22 +17,24 @@
 
 
     .btn-#{$key}{
-        @include buttonMixin($value, false);
+        @include buttonMixin($value, false, true);
         &:hover{
             background-color: color.scale($value, $lightness: 10%);
         }
     }
 
     .btn-#{$key}-outlined{
-        @include buttonMixin($value, true);
+        @include buttonMixin($value, true, true);
         &:hover{
             background-color: $value;
         }
     }
 }
 
+/* Gradient button */
+
 %btn-gradient{
-    @include buttonMixin();
+    @include buttonMixin($br:true);
     position: relative;
     outline:none;
     border: none;
@@ -125,3 +129,127 @@
     }
 }
 
+
+/* Modern Hover effect on button */
+
+%hvoalohany{
+    border: $base-border-thickness * 2  solid black;
+    content: "";
+    height: calc(100% - 3px);
+    width: calc(100% - 3px);
+    bottom: 0;
+    z-index: 1;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+    left: 0;
+    top:0
+}
+
+.btn-hvoalohany{
+    @include buttonMixin();
+    background-color: white;
+    position: relative;
+
+    &::after{
+        @extend  %hvoalohany;
+    }
+
+    &::before{
+        @extend  %hvoalohany;
+    }
+
+    &:hover{
+        &::after{
+            transform: translate(-3px, -3px);
+        }
+
+        &::before{
+            transform: translate(3px, 3px);
+        }
+    }
+}
+
+.btn-hfaharoa{
+    @include buttonMixin();
+    background-color: white;
+    position: relative;
+    border: $base-border-thickness * 2 solid black;
+    padding: $base-padding * 0.85 $base-padding * 2;
+
+    span{
+        position: relative;
+        z-index: 3
+        ;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: -2px;
+        width: calc(100% + 5px);
+        height: calc(100% - 12px);
+        transform: scaleY(1);
+        background-color: white;
+        transition: 0.5s ease-in-out;
+        transition-delay: 0.3s;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 5.5px;
+        width: calc(100% - 12px);
+        height: calc(100% + 5px);
+        transform: scaleY(1);
+        background-color: white;
+        transition: 0.5s ease-in-out;
+    }
+
+    &:hover{
+        &::before{
+            transform: scale(0);
+        }
+
+        &::after{
+            transform: scale(0);
+        }
+    }
+
+}
+
+%hfahatelo{
+    border: $base-border-thickness * 2  solid black;
+    content: "";
+    height: calc(100% - 3px);
+    width: calc(100% - 3px);
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.btn-hfahatelo{
+    @include buttonMixin();
+    background-color: white;
+    position: relative;
+
+    &::after{
+        @extend %hfahatelo;
+        top:0;
+        left: 0;
+    }
+
+    &::before{
+        @extend %hfahatelo;
+        bottom: 1px;
+        right: 0;
+    }
+
+    
+}
+
+.btn-hfahaefatra{
+    @include buttonMixin();
+    background-color: white;
+}

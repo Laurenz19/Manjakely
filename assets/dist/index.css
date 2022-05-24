@@ -3056,12 +3056,13 @@ hr {
 /* theme colors */
 /* Other colors */
 /* Color palette */
+/* Default Button */
 .btn {
   border: none;
   background-color: #e2e2e2;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
   color: rgb(25, 25, 25);
 }
@@ -3069,9 +3070,9 @@ hr {
 .btn-primary {
   border: none;
   background-color: rgb(107, 140, 255);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-primary:hover {
@@ -3082,9 +3083,9 @@ hr {
   border: 1px solid rgb(107, 140, 255);
   color: rgb(107, 140, 255);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-primary-outlined:hover {
@@ -3094,9 +3095,9 @@ hr {
 .btn-secondary {
   border: none;
   background-color: rgb(106, 202, 65);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-secondary:hover {
@@ -3107,9 +3108,9 @@ hr {
   border: 1px solid rgb(106, 202, 65);
   color: rgb(106, 202, 65);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-secondary-outlined:hover {
@@ -3119,9 +3120,9 @@ hr {
 .btn-error {
   border: none;
   background-color: rgb(255, 0, 54);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-error:hover {
@@ -3132,9 +3133,9 @@ hr {
   border: 1px solid rgb(255, 0, 54);
   color: rgb(255, 0, 54);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-error-outlined:hover {
@@ -3144,9 +3145,9 @@ hr {
 .btn-info {
   border: none;
   background-color: rgb(255, 198, 54);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-info:hover {
@@ -3157,9 +3158,9 @@ hr {
   border: 1px solid rgb(255, 198, 54);
   color: rgb(255, 198, 54);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-info-outlined:hover {
@@ -3169,9 +3170,9 @@ hr {
 .btn-warning {
   border: none;
   background-color: rgb(255, 132, 0);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-warning:hover {
@@ -3182,9 +3183,9 @@ hr {
   border: 1px solid rgb(255, 132, 0);
   color: rgb(255, 132, 0);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-warning-outlined:hover {
@@ -3194,9 +3195,9 @@ hr {
 .btn-aero-blue {
   border: none;
   background-color: rgb(181, 255, 233);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-aero-blue:hover {
@@ -3207,9 +3208,9 @@ hr {
   border: 1px solid rgb(181, 255, 233);
   color: rgb(181, 255, 233);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-aero-blue-outlined:hover {
@@ -3219,9 +3220,9 @@ hr {
 .btn-medium-orchid {
   border: none;
   background-color: rgb(181, 79, 233);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-medium-orchid:hover {
@@ -3232,9 +3233,9 @@ hr {
   border: 1px solid rgb(181, 79, 233);
   color: rgb(181, 79, 233);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-medium-orchid-outlined:hover {
@@ -3244,9 +3245,9 @@ hr {
 .btn-teal-blue {
   border: none;
   background-color: rgb(0, 118, 146);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-teal-blue:hover {
@@ -3257,9 +3258,9 @@ hr {
   border: 1px solid rgb(0, 118, 146);
   color: rgb(0, 118, 146);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-teal-blue-outlined:hover {
@@ -3269,9 +3270,9 @@ hr {
 .btn-forest-green {
   border: none;
   background-color: rgb(0, 47, 0);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-forest-green:hover {
@@ -3282,9 +3283,9 @@ hr {
   border: 1px solid rgb(0, 47, 0);
   color: rgb(0, 47, 0);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-forest-green-outlined:hover {
@@ -3294,9 +3295,9 @@ hr {
 .btn-chocolate {
   border: none;
   background-color: rgb(118, 68, 0);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-chocolate:hover {
@@ -3307,9 +3308,9 @@ hr {
   border: 1px solid rgb(118, 68, 0);
   color: rgb(118, 68, 0);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-chocolate-outlined:hover {
@@ -3319,9 +3320,9 @@ hr {
 .btn-silver {
   border: none;
   background-color: rgb(201, 201, 201);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-silver:hover {
@@ -3332,9 +3333,9 @@ hr {
   border: 1px solid rgb(201, 201, 201);
   color: rgb(201, 201, 201);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-silver-outlined:hover {
@@ -3344,9 +3345,9 @@ hr {
 .btn-default {
   border: none;
   background-color: rgb(25, 25, 25);
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-default:hover {
@@ -3357,9 +3358,9 @@ hr {
   border: 1px solid rgb(25, 25, 25);
   color: rgb(25, 25, 25);
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-default-outlined:hover {
@@ -3369,9 +3370,9 @@ hr {
 .btn-white {
   border: none;
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-white:hover {
@@ -3382,21 +3383,22 @@ hr {
   border: 1px solid white;
   color: white;
   background-color: white;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
 }
 .btn-white-outlined:hover {
   background-color: white;
 }
 
+/* Gradient button */
 .btn-gradient-light-poncho, .btn-gradient-dark-poncho, .btn-gradient-light-sunset, .btn-gradient-dark-sunset, .btn-gradient-light-red-ocean, .btn-gradient-dark-red-ocean, .btn-gradient-light-pinot-noir, .btn-gradient-dark-pinot-noir, .btn-gradient-light-midnight-city, .btn-gradient-dark-midnight-city, .btn-gradient-light-shroom-haze, .btn-gradient-dark-shroom-haze, .btn-gradient-light-moss, .btn-gradient-dark-moss, .btn-gradient-light-frozen, .btn-gradient-dark-frozen, .btn-gradient-light-royal-blue, .btn-gradient-dark-royal-blue, .btn-gradient-light-harmonic-energy, .btn-gradient-dark-harmonic-energy, .btn-gradient-light-horizon, .btn-gradient-dark-horizon, .btn-gradient-light-nimvelo, .btn-gradient-dark-nimvelo, .btn-gradient-light-superman, .btn-gradient-dark-superman {
   border: none;
   background-color: #e2e2e2;
+  border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 20px;
   padding: 0.75rem 1.5rem;
   position: relative;
   outline: none;
@@ -3636,6 +3638,122 @@ hr {
     background-position: 0 0;
   }
 }
+/* Modern Hover effect on button */
+.btn-hvoalohany::before, .btn-hvoalohany::after {
+  border: 2px solid black;
+  content: "";
+  height: calc(100% - 3px);
+  width: calc(100% - 3px);
+  bottom: 0;
+  z-index: 1;
+  transition: transform 0.3s ease-in;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn-hvoalohany {
+  border: none;
+  background-color: #e2e2e2;
+  border-radius: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  position: relative;
+}
+.btn-hvoalohany:hover::after {
+  transform: translate(-3px, -3px);
+}
+.btn-hvoalohany:hover::before {
+  transform: translate(3px, 3px);
+}
+
+.btn-hfaharoa {
+  border: none;
+  background-color: #e2e2e2;
+  border-radius: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  position: relative;
+  border: 2px solid black;
+  padding: 0.6375rem 1.5rem;
+}
+.btn-hfaharoa span {
+  position: relative;
+  z-index: 3;
+}
+.btn-hfaharoa::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 5px);
+  height: calc(100% - 12px);
+  transform: scaleY(1);
+  background-color: white;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+.btn-hfaharoa::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 5.5px;
+  width: calc(100% - 12px);
+  height: calc(100% + 5px);
+  transform: scaleY(1);
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+.btn-hfaharoa:hover::before {
+  transform: scale(0);
+}
+.btn-hfaharoa:hover::after {
+  transform: scale(0);
+}
+
+.btn-hfahatelo::before, .btn-hfahatelo::after {
+  border: 2px solid black;
+  content: "";
+  height: calc(100% - 3px);
+  width: calc(100% - 3px);
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.btn-hfahatelo {
+  border: none;
+  background-color: #e2e2e2;
+  border-radius: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  position: relative;
+}
+.btn-hfahatelo::after {
+  top: 0;
+  left: 0;
+}
+.btn-hfahatelo::before {
+  bottom: 1px;
+  right: 0;
+}
+
+.btn-hfahaefatra {
+  border: none;
+  background-color: #e2e2e2;
+  border-radius: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+}
+
 /* Base layout */
 .container {
   width: 100%;
