@@ -11,7 +11,8 @@ function scssTask(){
 
 /* watch task */
 function watchTask(){
-    watch(['assets/sass/**/*.scss'], scssTask)
+   // watch(['assets/sass/**/*.scss'], scssTask)
+    watch(['manjakely-css/**/*.scss'], scssTask)
 }
 
 exports.default = series(scssTask, watchTask)

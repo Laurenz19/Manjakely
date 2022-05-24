@@ -372,6 +372,124 @@ hr {
   position: absolute;
 }
 
+/* Gradient generator: https://uigradients.com*/
+.btn-gradient-light-superman:hover::before, .btn-gradient-light-superman::before, .btn-gradient-light-superman, .btn-gradient-dark-superman:hover::before, .btn-gradient-dark-superman::before, .btn-gradient-dark-superman {
+  background: #0099F7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F11712, #0099F7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F11712, #0099F7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-nimvelo:hover::before, .btn-gradient-light-nimvelo::before, .btn-gradient-light-nimvelo, .btn-gradient-dark-nimvelo:hover::before, .btn-gradient-dark-nimvelo::before, .btn-gradient-dark-nimvelo {
+  background: #06ac61;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #26a0da, #06ac61);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #26a0da, #06ac61);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-horizon:hover::before, .btn-gradient-light-horizon::before, .btn-gradient-light-horizon, .btn-gradient-dark-horizon:hover::before, .btn-gradient-dark-horizon::before, .btn-gradient-dark-horizon {
+  background: #003973;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E5E5BE, #003973);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E5E5BE, #003973);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-harmonic-energy:hover::before, .btn-gradient-light-harmonic-energy::before, .btn-gradient-light-harmonic-energy, .btn-gradient-dark-harmonic-energy:hover::before, .btn-gradient-dark-harmonic-energy::before, .btn-gradient-dark-harmonic-energy {
+  background: #16A085;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F4D03F, #16A085);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F4D03F, #16A085);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-royal-blue:hover::before, .btn-gradient-light-royal-blue::before, .btn-gradient-light-royal-blue, .btn-gradient-dark-royal-blue:hover::before, .btn-gradient-dark-royal-blue::before, .btn-gradient-dark-royal-blue {
+  background: #02466d;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #04bcff, #02466d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #04bcff, #02466d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-frozen:hover::before, .btn-gradient-light-frozen::before, .btn-gradient-light-frozen, .btn-gradient-dark-frozen:hover::before, .btn-gradient-dark-frozen::before, .btn-gradient-dark-frozen {
+  background: #5d4392;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E7E9BB, #5d4392);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E7E9BB, #5d4392);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-moss:hover::before, .btn-gradient-light-moss::before, .btn-gradient-light-moss, .btn-gradient-dark-moss:hover::before, .btn-gradient-dark-moss::before, .btn-gradient-dark-moss {
+  background: #134E5E;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #71B280, #134E5E);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #71B280, #134E5E);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-shroom-haze:hover::before, .btn-gradient-light-shroom-haze::before, .btn-gradient-light-shroom-haze, .btn-gradient-dark-shroom-haze:hover::before, .btn-gradient-dark-shroom-haze::before, .btn-gradient-dark-shroom-haze {
+  background: #5C258D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4389A2, #5C258D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-midnight-city:hover::before, .btn-gradient-light-midnight-city::before, .btn-gradient-light-midnight-city, .btn-gradient-dark-midnight-city:hover::before, .btn-gradient-dark-midnight-city::before, .btn-gradient-dark-midnight-city {
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5b5c5e, #232526, #5b5c5e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5b5c5e, #232526, #5b5c5e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-pinot-noir:hover::before, .btn-gradient-light-pinot-noir::before, .btn-gradient-light-pinot-noir, .btn-gradient-dark-pinot-noir:hover::before, .btn-gradient-dark-pinot-noir::before, .btn-gradient-dark-pinot-noir {
+  background: #4b6cb7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2b4373, #4b6cb7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2b4373, #4b6cb7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-red-ocean:hover::before, .btn-gradient-light-red-ocean::before, .btn-gradient-light-red-ocean, .btn-gradient-dark-red-ocean:hover::before, .btn-gradient-dark-red-ocean::before, .btn-gradient-dark-red-ocean {
+  background: #1D4350;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A43931, #1D4350);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-sunset:hover::before, .btn-gradient-light-sunset::before, .btn-gradient-light-sunset, .btn-gradient-dark-sunset:hover::before, .btn-gradient-dark-sunset::before, .btn-gradient-dark-sunset {
+  background: #0ec0db;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F56217, #0ec0db);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F56217, #0ec0db);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-gradient-light-poncho:hover::before, .btn-gradient-light-poncho::before, .btn-gradient-light-poncho, .btn-gradient-dark-poncho:hover::before, .btn-gradient-dark-poncho::before, .btn-gradient-dark-poncho {
+  background: #403A3E;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BE5869, #403A3E);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #BE5869, #403A3E);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 /* Fonts */
 /* theme colors */
 /* Other colors */
@@ -3273,6 +3391,251 @@ hr {
   background-color: white;
 }
 
+.btn-gradient-light-poncho, .btn-gradient-dark-poncho, .btn-gradient-light-sunset, .btn-gradient-dark-sunset, .btn-gradient-light-red-ocean, .btn-gradient-dark-red-ocean, .btn-gradient-light-pinot-noir, .btn-gradient-dark-pinot-noir, .btn-gradient-light-midnight-city, .btn-gradient-dark-midnight-city, .btn-gradient-light-shroom-haze, .btn-gradient-dark-shroom-haze, .btn-gradient-light-moss, .btn-gradient-dark-moss, .btn-gradient-light-frozen, .btn-gradient-dark-frozen, .btn-gradient-light-royal-blue, .btn-gradient-dark-royal-blue, .btn-gradient-light-harmonic-energy, .btn-gradient-dark-harmonic-energy, .btn-gradient-light-horizon, .btn-gradient-dark-horizon, .btn-gradient-light-nimvelo, .btn-gradient-dark-nimvelo, .btn-gradient-light-superman, .btn-gradient-dark-superman {
+  border: none;
+  background-color: #e2e2e2;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  outline: none;
+  border: none;
+}
+.btn-gradient-light-poncho span, .btn-gradient-dark-poncho span, .btn-gradient-light-sunset span, .btn-gradient-dark-sunset span, .btn-gradient-light-red-ocean span, .btn-gradient-dark-red-ocean span, .btn-gradient-light-pinot-noir span, .btn-gradient-dark-pinot-noir span, .btn-gradient-light-midnight-city span, .btn-gradient-dark-midnight-city span, .btn-gradient-light-shroom-haze span, .btn-gradient-dark-shroom-haze span, .btn-gradient-light-moss span, .btn-gradient-dark-moss span, .btn-gradient-light-frozen span, .btn-gradient-dark-frozen span, .btn-gradient-light-royal-blue span, .btn-gradient-dark-royal-blue span, .btn-gradient-light-harmonic-energy span, .btn-gradient-dark-harmonic-energy span, .btn-gradient-light-horizon span, .btn-gradient-dark-horizon span, .btn-gradient-light-nimvelo span, .btn-gradient-dark-nimvelo span, .btn-gradient-light-superman span, .btn-gradient-dark-superman span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  z-index: 1;
+  position: relative;
+  background: transparent;
+}
+.btn-gradient-light-poncho::after, .btn-gradient-dark-poncho::after, .btn-gradient-light-sunset::after, .btn-gradient-dark-sunset::after, .btn-gradient-light-red-ocean::after, .btn-gradient-dark-red-ocean::after, .btn-gradient-light-pinot-noir::after, .btn-gradient-dark-pinot-noir::after, .btn-gradient-light-midnight-city::after, .btn-gradient-dark-midnight-city::after, .btn-gradient-light-shroom-haze::after, .btn-gradient-dark-shroom-haze::after, .btn-gradient-light-moss::after, .btn-gradient-dark-moss::after, .btn-gradient-light-frozen::after, .btn-gradient-dark-frozen::after, .btn-gradient-light-royal-blue::after, .btn-gradient-dark-royal-blue::after, .btn-gradient-light-harmonic-energy::after, .btn-gradient-dark-harmonic-energy::after, .btn-gradient-light-horizon::after, .btn-gradient-dark-horizon::after, .btn-gradient-light-nimvelo::after, .btn-gradient-dark-nimvelo::after, .btn-gradient-light-superman::after, .btn-gradient-dark-superman::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 20px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  top: 4px;
+  left: 4px;
+}
+.btn-gradient-light-poncho::before, .btn-gradient-dark-poncho::before, .btn-gradient-light-sunset::before, .btn-gradient-dark-sunset::before, .btn-gradient-light-red-ocean::before, .btn-gradient-dark-red-ocean::before, .btn-gradient-light-pinot-noir::before, .btn-gradient-dark-pinot-noir::before, .btn-gradient-light-midnight-city::before, .btn-gradient-dark-midnight-city::before, .btn-gradient-light-shroom-haze::before, .btn-gradient-dark-shroom-haze::before, .btn-gradient-light-moss::before, .btn-gradient-dark-moss::before, .btn-gradient-light-frozen::before, .btn-gradient-dark-frozen::before, .btn-gradient-light-royal-blue::before, .btn-gradient-dark-royal-blue::before, .btn-gradient-light-harmonic-energy::before, .btn-gradient-dark-harmonic-energy::before, .btn-gradient-light-horizon::before, .btn-gradient-dark-horizon::before, .btn-gradient-light-nimvelo::before, .btn-gradient-dark-nimvelo::before, .btn-gradient-light-superman::before, .btn-gradient-dark-superman::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+.btn-gradient-light-poncho:hover, .btn-gradient-dark-poncho:hover, .btn-gradient-light-sunset:hover, .btn-gradient-dark-sunset:hover, .btn-gradient-light-red-ocean:hover, .btn-gradient-dark-red-ocean:hover, .btn-gradient-light-pinot-noir:hover, .btn-gradient-dark-pinot-noir:hover, .btn-gradient-light-midnight-city:hover, .btn-gradient-dark-midnight-city:hover, .btn-gradient-light-shroom-haze:hover, .btn-gradient-dark-shroom-haze:hover, .btn-gradient-light-moss:hover, .btn-gradient-dark-moss:hover, .btn-gradient-light-frozen:hover, .btn-gradient-dark-frozen:hover, .btn-gradient-light-royal-blue:hover, .btn-gradient-dark-royal-blue:hover, .btn-gradient-light-harmonic-energy:hover, .btn-gradient-dark-harmonic-energy:hover, .btn-gradient-light-horizon:hover, .btn-gradient-dark-horizon:hover, .btn-gradient-light-nimvelo:hover, .btn-gradient-dark-nimvelo:hover, .btn-gradient-light-superman:hover, .btn-gradient-dark-superman:hover {
+  background-size: 400%;
+  animation: rotateBorder 10s linear infinite;
+}
+.btn-gradient-light-poncho:hover::before, .btn-gradient-dark-poncho:hover::before, .btn-gradient-light-sunset:hover::before, .btn-gradient-dark-sunset:hover::before, .btn-gradient-light-red-ocean:hover::before, .btn-gradient-dark-red-ocean:hover::before, .btn-gradient-light-pinot-noir:hover::before, .btn-gradient-dark-pinot-noir:hover::before, .btn-gradient-light-midnight-city:hover::before, .btn-gradient-dark-midnight-city:hover::before, .btn-gradient-light-shroom-haze:hover::before, .btn-gradient-dark-shroom-haze:hover::before, .btn-gradient-light-moss:hover::before, .btn-gradient-dark-moss:hover::before, .btn-gradient-light-frozen:hover::before, .btn-gradient-dark-frozen:hover::before, .btn-gradient-light-royal-blue:hover::before, .btn-gradient-dark-royal-blue:hover::before, .btn-gradient-light-harmonic-energy:hover::before, .btn-gradient-dark-harmonic-energy:hover::before, .btn-gradient-light-horizon:hover::before, .btn-gradient-dark-horizon:hover::before, .btn-gradient-light-nimvelo:hover::before, .btn-gradient-dark-nimvelo:hover::before, .btn-gradient-light-superman:hover::before, .btn-gradient-dark-superman:hover::before {
+  opacity: 1;
+  filter: blur(5px);
+  transition: 0.3s opacity ease-in-out;
+}
+
+.btn-gradient-dark-superman span {
+  color: white;
+}
+.btn-gradient-dark-superman::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-superman span {
+  color: black;
+}
+.btn-gradient-light-superman::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-nimvelo span {
+  color: white;
+}
+.btn-gradient-dark-nimvelo::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-nimvelo span {
+  color: black;
+}
+.btn-gradient-light-nimvelo::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-horizon span {
+  color: white;
+}
+.btn-gradient-dark-horizon::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-horizon span {
+  color: black;
+}
+.btn-gradient-light-horizon::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-harmonic-energy span {
+  color: white;
+}
+.btn-gradient-dark-harmonic-energy::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-harmonic-energy span {
+  color: black;
+}
+.btn-gradient-light-harmonic-energy::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-royal-blue span {
+  color: white;
+}
+.btn-gradient-dark-royal-blue::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-royal-blue span {
+  color: black;
+}
+.btn-gradient-light-royal-blue::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-frozen span {
+  color: white;
+}
+.btn-gradient-dark-frozen::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-frozen span {
+  color: black;
+}
+.btn-gradient-light-frozen::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-moss span {
+  color: white;
+}
+.btn-gradient-dark-moss::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-moss span {
+  color: black;
+}
+.btn-gradient-light-moss::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-shroom-haze span {
+  color: white;
+}
+.btn-gradient-dark-shroom-haze::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-shroom-haze span {
+  color: black;
+}
+.btn-gradient-light-shroom-haze::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-midnight-city span {
+  color: white;
+}
+.btn-gradient-dark-midnight-city::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-midnight-city span {
+  color: black;
+}
+.btn-gradient-light-midnight-city::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-pinot-noir span {
+  color: white;
+}
+.btn-gradient-dark-pinot-noir::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-pinot-noir span {
+  color: black;
+}
+.btn-gradient-light-pinot-noir::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-red-ocean span {
+  color: white;
+}
+.btn-gradient-dark-red-ocean::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-red-ocean span {
+  color: black;
+}
+.btn-gradient-light-red-ocean::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-sunset span {
+  color: white;
+}
+.btn-gradient-dark-sunset::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-sunset span {
+  color: black;
+}
+.btn-gradient-light-sunset::after {
+  background-color: white;
+}
+
+.btn-gradient-dark-poncho span {
+  color: white;
+}
+.btn-gradient-dark-poncho::after {
+  background-color: rgb(51, 51, 51);
+}
+
+.btn-gradient-light-poncho span {
+  color: black;
+}
+.btn-gradient-light-poncho::after {
+  background-color: white;
+}
+
+@keyframes rotateBorder {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 /* Base layout */
 .container {
   width: 100%;
@@ -3699,7 +4062,7 @@ hr {
 .navbar, .navbar-white, .navbar-default, .navbar-silver, .navbar-chocolate, .navbar-forest-green, .navbar-teal-blue, .navbar-medium-orchid, .navbar-aero-blue, .navbar-warning, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
   padding: 0.75rem 1.5rem;
   box-shadow: 3px 3px 15px 0px rgba(66, 68, 90, 0.2);
-  z-index: 1;
+  z-index: 2;
 }
 .navbar .nav-title, .navbar-white .nav-title, .navbar-default .nav-title, .navbar-silver .nav-title, .navbar-chocolate .nav-title, .navbar-forest-green .nav-title, .navbar-teal-blue .nav-title, .navbar-medium-orchid .nav-title, .navbar-aero-blue .nav-title, .navbar-warning .nav-title, .navbar-info .nav-title, .navbar-error .nav-title, .navbar-secondary .nav-title, .navbar-primary .nav-title {
   font-size: 2rem;

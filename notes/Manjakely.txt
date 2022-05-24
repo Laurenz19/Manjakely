@@ -33,7 +33,16 @@ Marging, padding, opacity, display, float, ...
 5-  How to use this library:
     add manjakely-css folder in your project directory and then 
     import it inside your scss file.
-    @import "manjakely-css";
+    @import "path/manjakely-css";
+
+---------------------------------------------------------------
+    a- button
+    b- squelleton
+    c- card
+    d- progress bar
+    e- neumoriphism
+    f- rainbow border animation
+---------------------------------------------------------------
 
 
     

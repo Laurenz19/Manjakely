@@ -1,0 +1,269 @@
+/* Gradient generator: https://uigradients.com*/
+
+%gradient-superman{
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-nimvelo{
+    background: #06ac61;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #06ac61);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #06ac61); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-horizon{
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-harmonic-energy{
+    background: #16A085;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-royal-blue{
+    background: #02466d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #04bcff, #02466d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #04bcff, #02466d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-frozen{
+    background: #5d4392;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E7E9BB, #5d4392);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E7E9BB, #5d4392); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-moss{
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-shroom-haze{
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-midnight-city{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5b5c5e, #232526, #5b5c5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5b5c5e, #232526, #5b5c5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-pinot-noir{
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2b4373, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2b4373, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-red-ocean{
+    background: #1D4350;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-sunset{
+    background: #0ec0db;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F56217, #0ec0db);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F56217, #0ec0db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+%gradient-poncho{
+    background: #403A3E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BE5869, #403A3E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BE5869, #403A3E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+$bg-gradients: "superman", "nimvelo", "horizon", "harmonic-energy",
+                "royal-blue", "frozen", "moss", "shroom-haze", "midnight-city",
+                "pinot-noir", "red-ocean", "sunset",
+                "poncho";
+
+
+@mixin gradient-condition($value) {
+    @if $value == "superman"{
+        @extend %gradient-superman;
+
+        &::before{
+            @extend %gradient-superman;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-superman;
+             }
+        }
+    }
+
+    @if $value == "nimvelo"{
+        @extend %gradient-nimvelo;
+
+        &::before{
+            @extend %gradient-nimvelo;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-nimvelo;
+             }
+        }
+    }
+
+    @if $value == "horizon"{
+        @extend %gradient-horizon;
+
+        &::before{
+            @extend %gradient-horizon;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-horizon;
+            }
+        }
+    }
+
+    @if $value == "harmonic-energy"{
+        @extend %gradient-harmonic-energy;
+
+        &::before{
+            @extend %gradient-harmonic-energy;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-harmonic-energy;
+            }
+        }
+    }
+
+    @if $value == "royal-blue"{
+        @extend %gradient-royal-blue;
+
+        &::before{
+            @extend %gradient-royal-blue;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-royal-blue;
+            }
+        }
+    }
+
+    @if $value == "frozen"{
+        @extend %gradient-frozen;
+
+        &::before{
+            @extend %gradient-frozen;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-frozen;
+            }
+        }
+    }
+
+    @if $value == "moss"{
+        @extend %gradient-moss;
+
+        &::before{
+            @extend %gradient-moss;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-moss;
+            }
+        }
+    }
+
+    @if $value == "shroom-haze"{
+        @extend %gradient-shroom-haze;
+
+        &::before{
+            @extend %gradient-shroom-haze;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-shroom-haze;
+            }
+        }
+    }
+
+    @if $value == "midnight-city"{
+        @extend %gradient-midnight-city;
+
+        &::before{
+            @extend %gradient-midnight-city;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-midnight-city;
+            }
+        }
+    }
+
+    @if $value == "pinot-noir"{
+        @extend %gradient-pinot-noir;
+
+        &::before{
+            @extend %gradient-pinot-noir;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-pinot-noir;
+            }
+        }
+    }
+
+    @if $value == "red-ocean"{
+        @extend %gradient-red-ocean;
+
+        &::before{
+            @extend %gradient-red-ocean;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-red-ocean;
+            }
+        }
+    }
+
+    @if $value == "sunset"{
+        @extend %gradient-sunset;
+
+        &::before{
+            @extend %gradient-sunset;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-sunset;
+            }
+        }
+    }
+
+    @if $value == "poncho"{
+        @extend %gradient-poncho;
+
+        &::before{
+            @extend %gradient-poncho;
+        }
+
+        &:hover{
+            &::before{
+                @extend %gradient-poncho;
+            }
+        }
+    }
+}

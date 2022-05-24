@@ -635,6 +635,13 @@ inside our html file.
 For that we use another gulp plugin called "purge css".
 
 
+Reminding css:
+  - filter proprety:
+  La propriété CSS filter permet d'appliquer des filtres et d'obtenir des effets
+  graphiques de flou, de saturation, etc. Les filtres sont généralement utilisés 
+  pour ajuster le rendu d'une image, d'un arrière-plan ou des bordures.
+
+
 
 
 
